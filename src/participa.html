@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./assets/styles/tailwind.css" />
+    <title>Participa - Jornadas de Economía Circular 2025</title>
+  </head>
+  <body class="page-bg font-sans">
+    <div class="min-h-screen flex flex-col">
+
+      <header class="flex items-center justify-between px-4 py-6 max-w-6xl mx-auto w-full">
+        <a href="index.html">
+          <img src="./assets/images/logo.png" alt="Logo Jornadas de Economía Circular" class="h-12" />
+        </a>
+        <nav>
+          <ul class="flex gap-6 text-base font-medium">
+            <li><a href="index.html" class="hover:text-primary">Inicio</a></li>
+            <li><a href="ponentes.html" class="hover:text-primary">Ponentes</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="flex-1 px-4 py-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <section>
+          <h2 class="text-2xl font-bold mb-4">¿Por qué participar?</h2>
+          <p class="text-lg mb-6 leading-relaxed text-justify">
+            Las jornadas de economía circular son una oportunidad única para aprender, compartir ideas y transformar el presente...
+          </p>
+
+          <div class="rounded overflow-hidden mb-6">
+            <img src="./assets/images/carrousel5.png" alt="Imagen 1" class="w-full h-auto rounded" />
+          </div>
+
+          <p class="text-lg leading-relaxed text-justify">
+            Participar en estas jornadas significa unirte a una comunidad comprometida con el cambio...
+          </p>
+        </section>
+
+        <include src="./views/formulario-participa.html"></include>
+
+      </main>
+
+      <include src="./views/footer.html"></include>
+
+      <script type="module" src="./assets/scripts/main.js"></script>
+    </div>
+  </body>
+</html>

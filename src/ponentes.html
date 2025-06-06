@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/styles/tailwind.css" />
+    <title>Ponentes - Jornadas de Economía Circular 2025</title>
+  </head>
+  <body class="page-bg font-sans">
+    <div class="min-h-screen flex flex-col">
+      <!-- Header -->
+      <header class="container mx-auto flex justify-between items-center py-4 px-4">
+        <a href="index.html">
+          <img src="./assets/images/logo.png" alt="Logo Jornadas" class="h-12 w-auto" />
+        </a>
+        <nav>
+          <ul class="flex gap-6 text-sm font-medium">
+            <li><a href="index.html" class="text-gray-700 hover:text-blue-700">Inicio</a></li>
+            <li><a href="participa.html" class="text-gray-700 hover:text-blue-700">Participa</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <main class="container mx-auto px-4 py-10 text-center">
+        <h1 class="text-3xl font-bold text-blue-800 mb-12">Ponentes</h1>
+
+        <!-- Grid de ponentes -->
+        <include src="./views/grid-ponentes.html"></include>
+
+        <!-- Tabla de programa -->
+        <include src="./views/tabla-ponentes.html"></include>
+      </main>
+
+      <include src="./views/footer.html"></include>
+    </div>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

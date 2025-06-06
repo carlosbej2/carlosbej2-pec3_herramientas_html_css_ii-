@@ -1,0 +1,43 @@
+<form name="contact" method="POST" data-netlify="true" class="space-y-4 bg-gray-50 p-6 rounded shadow">
+    <div>
+      <label for="nombre" class="block font-medium">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" required class="input-field" />
+    </div>
+
+    <div>
+      <label for="email" class="block font-medium">Correo electrónico</label>
+      <input type="email" id="email" name="email" required class="input-field" />
+    </div>
+
+    <div>
+      <label for="telefono" class="block font-medium">Teléfono (opcional)</label>
+      <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" class="input-field" />
+    </div>
+
+    <div>
+      <label for="interes" class="block font-medium">Área de interés</label>
+      <select id="interes" name="interes" required class="input-field">
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="residuos">Gestión de residuos</option>
+        <option value="movilidad">Movilidad sostenible</option>
+        <option value="educacion">Educación ambiental</option>
+        <option value="tecnologia">Tecnología circular</option>
+      </select>
+    </div>
+
+    <fieldset class="mt-4">
+      <legend class="font-medium mb-2">¿Cómo te gustaría participar?</legend>
+      <div class="flex flex-col gap-2">
+        <label><input type="checkbox" id="asistente" name="rol" value="asistente" /> Asistente</label>
+        <label><input type="checkbox" id="voluntario" name="rol" value="voluntario" /> Voluntario/a</label>
+        <label><input type="checkbox" id="ponente" name="rol" value="ponente" /> Ponente</label>
+      </div>
+    </fieldset>
+
+    <div>
+      <label for="mensaje" class="block font-medium">Comentarios adicionales</label>
+      <textarea id="mensaje" name="mensaje" rows="4" class="input-field"></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary">Enviar</button>
+  </form>

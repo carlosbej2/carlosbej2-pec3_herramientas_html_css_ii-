@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/styles/tailwind.css" />
+    <title>Jornadas de Economía Circular 2025</title>
+  </head>
+  <body class="page-bg font-sans">
+    <div class="min-h-screen flex flex-col">
+      <!-- Header -->
+      <header class="container mx-auto flex justify-between items-center py-4 px-4">
+        <a href="index.html" class="shrink-0">
+          <img src="./assets/images/logo.png" alt="Logo Jornadas de Economía Circular" class="h-12 w-auto" />
+        </a>
+        <nav>
+          <ul class="flex space-x-6 text-sm font-medium">
+            <li><a href="ponentes.html" class="text-gray-700 hover:text-primary">Ponentes</a></li>
+            <li><a href="participa.html" class="text-gray-700 hover:text-primary">Participa</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <main class="flex-1 container mx-auto text-center px-4 py-20">
+        <h1 class="text-4xl font-bold text-primary mb-6">Jornadas de Economía Circular 2025</h1>
+        <p class="text-lg mb-10">Consulta las secciones principales:</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
+          <a href="ponentes.html" class="bg-primary text-white px-6 py-3 rounded hover:bg-primaryDark transition">Ver Ponentes</a>
+          <a href="participa.html" class="bg-primary text-white px-6 py-3 rounded hover:bg-primaryDark transition">Participar</a>
+        </div>
+      </main>
+
+      <include src="./views/footer.html"></include>
+    </div>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

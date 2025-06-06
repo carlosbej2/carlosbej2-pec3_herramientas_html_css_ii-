@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-field {
+    @apply w-full mt-1 border border-gray-300 rounded px-3 py-2;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white px-4 py-2 rounded hover:bg-primaryDark;
+  }
+
+  .page-bg {
+    @apply bg-background text-gray-900;
+  }
+}
